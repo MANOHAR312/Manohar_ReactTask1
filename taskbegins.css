@@ -1,0 +1,75 @@
+/*styles for laptops and tablets*/
+body{
+	/*background-color: #05FB13 ;*/
+	background-image: url("1.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+
+
+}
+
+#master{
+	 
+	background:  rgba(184, 8, 114 ,.5);
+	margin:4%;
+	/*border: 2px solid blue;*/
+	display: flex;
+	justify-content: space-around;
+	border-radius: 5%;
+	height: 80%;
+	
+
+}
+.slave{
+	width: 25%;
+	background-color:  #05FBEE;
+	margin: 5%;
+	padding: 4%;
+	border: 3px solid pink;
+	text-align: center;
+	border-radius: 5%;
+	box-shadow: 4px 4px 4px 4px;
+}
+.slave>img{
+	height:30%;
+	width:50%;
+	margin: 2%;
+
+}
+.slave:hover{
+	box-shadow: 4px 4px 4px 4px yellow;
+
+}
+/*mobile view styles*/
+@media screen and (min-width: 320px) and (max-width: 480px){
+	#master{
+		display: inline-block;
+		margin: 1%;
+	}
+	.slave{
+		width: 84%;
+		margin: 3%;
+	}
+	p{
+		font-size: 15px;
+	}
+	.slave>img{
+		height:50%;
+	}
+}
+/*tab view*/
+@media screen and (min-width: 481px) and (max-width:770px){
+	#master{
+		flex-wrap: wrap;
+	}
+	.slave{
+			height: 50%;
+	}
+	p{
+		font-size: 15px;
+	}
+	.slave>img{
+		height: 30%;
+		width: 90%;
+	}
+} 
